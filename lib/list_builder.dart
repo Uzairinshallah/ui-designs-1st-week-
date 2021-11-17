@@ -27,15 +27,15 @@ class list_builder extends StatelessWidget {
            backgroundColor: Colors.white,
            title: Row(
              children: [
-               Padding(
-                 padding: const EdgeInsets.all(0.0),
+               const Padding(
+                 padding: EdgeInsets.all(0.0),
                  child: Icon(
                    Icons.arrow_back,
                    color: Colors.black,
                  ),
                ),
                Container(width: 20,),
-               Text(
+               const Text(
                    "SWAP",
                     style: TextStyle(
                       fontSize: 15,
@@ -67,7 +67,7 @@ class list_builder extends StatelessWidget {
                       child: Image(image: NetworkImage(myList[index].imgUrl!),fit: BoxFit.cover,),
                     ),
                   ),
-                  title: Text(myList[index].dishType!,style: TextStyle(
+                  title: Text(myList[index].dishType!,style: const TextStyle(
                       color: Colors.blueGrey,
                       fontSize: 16,
                   ),),

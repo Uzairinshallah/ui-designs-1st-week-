@@ -21,15 +21,15 @@ class First extends StatelessWidget {
           backgroundColor: Colors.white,
           title: Row(
             children: [
-              Padding(
-                padding: const EdgeInsets.all(0.0),
+              const Padding(
+                padding: EdgeInsets.all(0.0),
                 child: Icon(
                   Icons.arrow_back,
                   color: Colors.black,
                 ),
               ),
               Container(width: 20,),
-              Text(
+              const Text(
                 "SWAP",
                 style: TextStyle(
                   fontSize: 15,
@@ -45,12 +45,12 @@ class First extends StatelessWidget {
             SizedBox(
               child: Image.network(listItems.imgUrl!),
             ),
-            Divider(
+            const Divider(
               height: 20,
             ),
             Text(
               'Dish Name     : ' + listItems.dishName!,
-              style: TextStyle(
+              style: const TextStyle(
                 fontWeight: FontWeight.bold,
               ),
             ),
